@@ -6,11 +6,19 @@ local Window = Fluent:CreateWindow({
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Rose",
+    Theme = "Amethyst",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 -- Fluent provides Lucide Icons, they are optional
+-- MAIN
 local Tabs = {
     Main = Window:AddTab({ Title = "MAIN", Icon = "" }),
+
+
+
+
+
+
+-- SETTINGS
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
