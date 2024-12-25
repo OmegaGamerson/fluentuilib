@@ -12,11 +12,23 @@ local Window = Fluent:CreateWindow({
 -- Fluent provides Lucide Icons, they are optional
 -- MAIN
 local Tabs = {
-    Main = Window:AddTab({ Title = "MAIN", Icon = "" }),
+    Main = Window:AddTab({ Title = "LEGIT", Icon = "" }),
 
+    local Section = Tab:AddSection("AIMBOT")
 
-
-
+    local Toggle = Tab:AddToggle("MyToggle", 
+    {
+        Title = "softlock", 
+        Description = "toggles softlock(no shit)",
+        Default = false
+        Callback = function(state)
+        if state then
+            print("Toggle On")
+        else
+            print("Toggle Off")
+            end
+        end 
+    })
 
 
 -- SETTINGS
